@@ -8,6 +8,7 @@ from snakemake.utils import min_version
 min_version("7.0")
 shell.executable("bash")
 
+sys.path.insert(0, "/home/yepeng/software/metapi_py/metapi")
 import metapi
 
 METAPI_DIR = metapi.__path__[0]
